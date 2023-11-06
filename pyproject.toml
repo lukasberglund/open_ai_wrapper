@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "openai-wrapper"
+version = "0.1.0"
+description = "Wrapper for OpenAI chat models."
+authors = ["lukasberglund <lukastberglund@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.13"
+scipy = "1.11.3"
+numpy = "1.24.2"
+openai = "0.27.0"
+tenacity = "8.1.0"
+torch = "2.0.0"
+pandas = "1.5.3"
+tiktoken = "0.3.3"
+poetry = "1.4.2"
+python-dotenv = "^1.0.0"
+pytest = "^7.4.3"
+diskcache = "5.4.0"
+pytest-timeout = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+timeout=10
